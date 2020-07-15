@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project for TEST 👀</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <body class="text-center content" cz-shortcut-listen="true">
+      <div class="box">
+        <!-- <h1 class="h3 mb-3 font-weight-normal">Show Function</h1> -->
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="showInput"
+            value="false"
+          />
+          <label class="custom-control-label" for="showInput">
+            Show Input</label
+          >
+        </div>
+
+        <div class="show-input container">
+          <!-- <div class="custom-control custom-switch"> // With Disabled Data switch ========
+          <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+          <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+        </div> -->
+          <div class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="activeClick"
+              value="false"
+            />
+            <label class="custom-control-label" for="activeClick"
+              >Click - Counter</label
+            >
+          </div>
+          <div class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="activeDrink"
+              value="false"
+            />
+            <label class="custom-control-label" for="activeDrink"
+              >Click - Counter</label
+            >
+          </div>
+          <div class="compteur-box">
+            <div class="container">
+              <h1 class="h3 compteur">Number</h1>
+            </div>
+          </div>
+
+          <button class="btn btn-lg btn-primary btn-block drink" type="submit">
+            Drink
+          </button>
+        </div>
+      </div>
+    </body>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

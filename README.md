@@ -1,11 +1,10 @@
 # extension-project
 
-Extension Browser
+## Click-Counter
 
-########## Extension-Project ##########
-Click-Counter
-Drink-Enough
-########################################
+## Drink-Enough
+
+Browser Extension
 
 TODO:
 

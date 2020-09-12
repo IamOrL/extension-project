@@ -22,8 +22,6 @@ const clickCounter = () => {
 
   // --- Add element ---
   activeClick.addEventListener("click", () => {
-    console.log(activeClick.value);
-
     if (activeClick.value == "false") {
       activeClick.setAttribute("value", "true");
       html.addEventListener("click", count);
@@ -31,6 +29,7 @@ const clickCounter = () => {
       activeClick.setAttribute("value", "false");
       html.removeEventListener("click", count);
     }
+    console.log("Click = " + activeClick.value);
   });
   //   html.addEventListener("click", count);
   console.log("clickCounter");

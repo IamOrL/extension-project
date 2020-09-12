@@ -2,15 +2,21 @@ import clickCounter from "./clickCounter.js";
 import drinkEnough from "./drinkEnough.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let showInfo = document.querySelector("#showInput");
+  let showInput = document.querySelector("#showInput");
+  let inputContainer = document.querySelector(".input-container");
 
-  showInfo.addEventListener("click", () => {
-    console.log(showInfo);
-    if (showInfo.value == "true") {
-      showInfo.setAttribute("value", "false");
+  activeClick.value = "false";
+  activeDrink.value = "false";
+
+  showInput.addEventListener("click", () => {
+    if (showInput.value == "false") {
+      showInput.setAttribute("value", "true");
+      inputContainer.style.display = "block";
     } else {
-      showInfo.setAttribute("value", "true");
+      showInput.setAttribute("value", "false");
+      inputContainer.style.display = "none";
     }
+    console.log(showInput);
   });
 
   clickCounter();

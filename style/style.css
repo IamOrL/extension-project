@@ -14,8 +14,12 @@ body {
 .box {
   width: 100%;
   max-width: 330px;
+  height: 300px;
   padding: 15px;
   margin: auto;
+}
+.input-container {
+  display: none;
 }
 .compteur-box {
   padding: 2rem;

@@ -13,13 +13,13 @@ const drinkEnough = () => {
   }
   // --- Add element ---
   activeDrink.addEventListener("click", () => {
-    console.log(activeDrink.value);
     if (activeDrink.value == "true") {
       activeDrink.setAttribute("value", "false");
       waterTimer();
     } else {
       activeDrink.setAttribute("value", "true");
     }
+    console.log("Drink = " + activeDrink.value);
   });
 
   //   drink.addEventListener("click", waterTimer);

@@ -2,13 +2,13 @@
 
 ## Click-Counter
 
-When it's activated, it will count and alert you about how many click you did on your browser.
+#### When it's activated, it will count and alert you about how many click you did on your browser.
 
 ## Drink-Enough
 
-When it's activated, it will tell you to drink a cup of water every time sequence you program.
+#### When it's activated, it will tell you to drink a cup of water every time sequence you program.
 
-Browser Extension
+###### Browser Extension
 
 TODO:
 

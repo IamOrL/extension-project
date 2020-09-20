@@ -4,20 +4,21 @@ const drinkEnough = () => {
 
   let drinkCount = 0;
 
+  let intervalDrink =     setInterval(() => { console.log("Boire de l'eau")}, 1000);
+
   // --- Drink remind ---
   function waterTimer() {
     drinkCount++;
-    setInterval(() => {
-      console.log("Boire de l'eau");
-    }, 10000);
+    intervalDrink
   }
   // --- Add element ---
   activeDrink.addEventListener("click", () => {
-    if (activeDrink.value == "true") {
-      activeDrink.setAttribute("value", "false");
+    if (activeDrink.value == "false") {
+      activeDrink.setAttribute("value", "true");
       waterTimer();
     } else {
-      activeDrink.setAttribute("value", "true");
+      activeDrink.setAttribute("value", "false");
+      clearInterval(intervalDrink);
     }
     console.log("Drink = " + activeDrink.value);
   });
